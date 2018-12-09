@@ -5,14 +5,19 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "android": "cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug"
   },
   "dependencies": {
+    "apollo-boost": "^0.1.22",
     "final-form": "^4.11.0",
+    "graphql": "^14.0.2",
     "polished": "^2.3.1",
     "ramda": "^0.26.1",
     "react": "16.6.3",
+    "react-apollo": "^2.3.2",
     "react-native": "0.57.7",
+    "react-native-navigation": "^2.2.0",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
     "redux-observable": "^1.0.0",
